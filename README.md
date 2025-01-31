@@ -13,7 +13,7 @@ None
 
 #### TECHNOLOGIES :
 
-HTML , CSS , Javascript
+HTML , CSS , Plane Javascript
 
 #### CONCEPTS AND TECHNIQUES :
 
