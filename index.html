@@ -11,27 +11,11 @@
     <div class="dropdown-container">
         <button class="dropdown-btn">Reload the game</button>
         <ul class="dropdown-menu">
-          <li>Option 1</li>
-          <li>Option 2</li>
-          <li>Option 3</li>
+          <li>Main Menu</li>
+          <li>Player A</li>
+          <li>Player B</li>
         </ul>
       </div>
-      <script>
-        const dropdownBtn = document.querySelector('.dropdown-btn');
-        const dropdownMenu = document.querySelector('.dropdown-menu');
-    
-        dropdownBtn.addEventListener('click', () => {
-          // Add click effect class
-          dropdownBtn.classList.add('click-effect');
-    
-          // Remove the effect after a short delay to reset.  
-          setTimeout(() => {
-            dropdownBtn.classList.remove('click-effect');
-          }, 100); // Adjust timing as needed
-    
-          // Toggle dropdown menu
-          dropdownMenu.classList.toggle('active');
-        });
-      </script>
+      <script src="index.js"></script>
 </body>
 </html>
