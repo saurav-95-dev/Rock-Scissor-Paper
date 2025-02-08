@@ -56,10 +56,6 @@
     transform: scale(0.95); /* Shrink slightly */
     background-color: #7a5aaa; /* Click color */
   }
-  .dropdown-menu.active {
-    transform: scaleY(1);
-    opacity: 1;
-}
 
   .dropdown-menu {
     position: absolute;
@@ -124,10 +120,6 @@
           // Toggle dropdown menu
           dropdownMenu.classList.toggle('active');
         });
-        document.querySelector(".dropdown-toggle").addEventListener("click", () => {
-    document.querySelector(".dropdown-menu").classList.toggle("active");
-});
-
       </script>
 </body>
 </html>
