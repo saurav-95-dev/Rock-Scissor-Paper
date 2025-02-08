@@ -29,10 +29,13 @@
       cursor: pointer;
       font-size: 16px;
       transition: background-color 0.3s ease, transform 0.1s ease;
+      position: relative;
     }
 
     .dropdown-btn:hover {
-      background-color: #4500a5;
+      
+      background-color: #834db3;
+      transform: scale(1.05);
     }
 
     .dropdown-btn.click-effect {
@@ -52,7 +55,6 @@
       transform: scaleY(0);
       transform-origin: top;
       transition: transform 0.3s ease, opacity 0.3s ease;
-      margin-left: 40px;
       opacity: 0;
     }
 
@@ -69,6 +71,26 @@
 
     .dropdown-menu li:hover {
       background-color: #f4f4f4;
+    }
+    .dropdown-btn::after{
+        content: "This is a tooltip and I dont find this funny anymore";
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        top: -45px;
+        left: 50%;
+        transform: translate(-50%);
+        color: white;
+        background-color: black;
+        border-radius: 8px;
+        white-space: nowrap;
+        transition: opacity 0.2s ease , visibility 0.4s ease;
+        padding: 8px;
+
+    }
+    .dropdown-btn:hover::after{
+        opacity: 1;
+        visibility: visible;
     }
   </style>
 </head>
