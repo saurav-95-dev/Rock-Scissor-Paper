@@ -117,19 +117,37 @@
       <script>
         const dropdownBtn = document.querySelector('.dropdown-btn');
         const dropdownMenu = document.querySelector('.dropdown-menu');
-    
+      
         dropdownBtn.addEventListener('click', () => {
           // Add click effect class
           dropdownBtn.classList.add('click-effect');
-    
-          // Remove the effect after a short delay to reset.  
+      
+          // Remove the effect after a short delay to reset
           setTimeout(() => {
             dropdownBtn.classList.remove('click-effect');
-          }, 100); // Adjust timing as needed
-    
-          // Toggle dropdown menu
+          }, 100);
+      
+          // Toggle dropdown menu visibility
           dropdownMenu.classList.toggle('active');
+      
+          // Start the game logic
+          startGame();
         });
+      
+        function startGame() {
+          alert("Game Started!"); // Replace this with your actual game logic
+          console.log("Game is now running...");
+          
+          // Example: Redirect to another game page
+          // window.location.href = "game.html"; 
+      
+          // Example: Hide the button after starting
+          dropdownBtn.style.display = "none"; 
+      
+          // Example: Change button text
+          // dropdownBtn.textContent = "Game Running...";
+        }
       </script>
+      
 </body>
 </html>
