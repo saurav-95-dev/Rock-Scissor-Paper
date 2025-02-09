@@ -130,24 +130,13 @@
           // Toggle dropdown menu visibility
           dropdownMenu.classList.toggle('active');
       
-          // Start the game logic
-          startGame();
+          // Redirect to the new application after a short delay (optional)
+          setTimeout(() => {
+            window.location.href = "new_application.html"; // Change this to your actual application URL
+          }, 500); // Adjust timing if needed
         });
-      
-        function startGame() {
-          alert("Game Started!"); // Replace this with your actual game logic
-          console.log("Game is now running...");
-          
-          // Example: Redirect to another game page
-          // window.location.href = "game.html"; 
-      
-          // Example: Hide the button after starting
-          dropdownBtn.style.display = "none"; 
-      
-          // Example: Change button text
-          // dropdownBtn.textContent = "Game Running...";
-        }
       </script>
+      
       
 </body>
 </html>
