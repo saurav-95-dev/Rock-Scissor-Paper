@@ -60,7 +60,7 @@
   .dropdown-menu {
     position: absolute;
     top: 100%; /* Places the dropdown just below the button */
-    left: 39%; /* Centers the dropdown */
+    left: 38%; /* Centers the dropdown */
     transform: translateX(-50%); /* Corrects alignment */
     background-color: #fff;
     border: 1px solid #ddd;
@@ -105,6 +105,30 @@
     background-color: #f6d43a;
     border-radius: 8px;
   }
+  .navigate-btn {
+    margin-top: 10px; /* Space below Start Game button */
+    background-color: blue;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    color: white;
+    font-size: medium;
+    cursor: pointer;
+    display: block; /* Ensure it's a block element */
+    width: 100%; /* Matches dropdown width */
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.navigate-btn:hover {
+    background-color: darkblue;
+    transform: scale(1.05);
+}
+
+.navigate-btn:active {
+    transform: scale(0.95);
+}
+
     </style>
     <div class="dropdown-container">
         <button class="dropdown-btn">Start Game</button>
@@ -113,6 +137,8 @@
           <li>Option 2</li>
           <li>Option 3</li>
         </ul>
+        <button class="navigate-btn" onclick="navigateToNewPage()">Navigate</button>
+
       </div>
       <script>
         const dropdownBtn = document.querySelector('.dropdown-btn');
