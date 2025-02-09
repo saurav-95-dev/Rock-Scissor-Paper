@@ -43,7 +43,7 @@
     color: white;
     padding: 6px;
     white-space:nowrap;
-    transition: visibility 0.3 ease , opacity 0.4 ease;
+    transition: opacity 1s ease , visibility 3s ease;
 
 }
 
@@ -60,7 +60,7 @@
   .dropdown-menu {
     position: absolute;
     top: 100%; /* Aligns the dropdown just below the button */
-    left: 42.5%; /* Centers the dropdown horizontally relative to the button */
+    left: 39%; /* Centers the dropdown horizontally relative to the button */
     transform: translateX(-50%); /* Adjust alignment to ensure proper centering */
     background-color: #fff;
     border: 1px solid #ddd;
@@ -71,7 +71,13 @@
     transform-origin: top;
     transition: transform 0.3s ease, opacity 0.3s ease;
     opacity: 0;
+    text-align: center;
+    width: 200px; /* Set a proper width for consistent alignment */
+    padding: 20px;
+    
 }
+
+
 
   .dropdown-container {
     position: relative;
@@ -82,18 +88,22 @@
   }
 
   .dropdown-menu.active {
-    transform: scaleY(1);
+    transform: scaleY(1);  /* Fully expands the menu */
     opacity: 1;
   }
 
   .dropdown-menu li {
     list-style: none;
-    padding: 10px 20px;
+    padding: 15px 20px 15px 20px;
     cursor: pointer;
+    display: flex; /* Makes it a flex container */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
   }
 
   .dropdown-menu li:hover {
-    background-color: #f4f4f4;
+    background-color: #f6d43a;
+    border-radius: 8px;
   }
     </style>
     <div class="dropdown-container">
@@ -112,7 +122,7 @@
           // Add click effect class
           dropdownBtn.classList.add('click-effect');
     
-          // Remove the effect after a short delay to reset
+          // Remove the effect after a short delay to reset.  
           setTimeout(() => {
             dropdownBtn.classList.remove('click-effect');
           }, 100); // Adjust timing as needed
