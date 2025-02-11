@@ -19,5 +19,5 @@ const dropdownBtn = document.querySelector('.dropdown-btn');
           // }, 500); // Adjust timing if needed
         });
         function navigateToNewPage() {
-        window.location.href = "new-application.html"; // Redirect to your actual page
+        window.location.href = "main.html"; // Redirect to your actual page
     }
