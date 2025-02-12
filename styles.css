@@ -119,3 +119,102 @@
 .navigate-btn:active {
   transform: scale(0.95);
 }
+
+/*......................................................*/
+
+/* Apply pulse animation before clicking */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+/* Apply bounce animation on click */
+@keyframes bounce {
+  0% { transform: scale(1); }
+  30% { transform: scale(1.1); }
+  50% { transform: scale(0.9); }
+  100% { transform: scale(1); }
+}
+
+/* Style for the "Press to Start" button */
+.navigate-btn {
+  width: 200px;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s, transform 0.3s;
+  margin-bottom: 10px;
+  background-color: blue;
+  color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 255, 0.6);
+  animation: pulse 1.5s infinite; /* Apply pulse animation */
+}
+
+/* Glow effect on hover */
+.navigate-btn:hover {
+  background-color: darkblue;
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(0, 0, 255, 0.8);
+}
+
+/* Bounce effect on click */
+.navigate-btn:active {
+  animation: bounce 0.3s ease-in-out;
+}
+
+/*..........*/
+
+.dropdown-container {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  align-items: center; /* Center horizontally */
+  gap: 15px; /* Add space between buttons */
+  margin-top: 200px; /* Adjust as needed */
+}
+
+/* Common button styles for same width */
+.navigate-btn, .dropdown-btn {
+  width: 220px;  /* Same width for both buttons */
+  padding: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Specific styles for "Press to Start" */
+.navigate-btn {
+  background-color: blue;
+  color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 255, 0.6);
+  animation: pulse 1.5s infinite;
+}
+
+/* Hover and click effects */
+.navigate-btn:hover {
+  background-color: darkblue;
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(0, 0, 255, 0.8);
+}
+
+.navigate-btn:active {
+  animation: bounce 0.3s ease-in-out;
+}
+
+/* Dropdown button styling */
+.dropdown-btn {
+  background-color: red;
+  color: white;
+}
+
+.dropdown-btn:hover {
+  background-color: darkred;
+}
