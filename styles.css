@@ -151,15 +151,14 @@
   margin-bottom: 10px;
   background-color: blue;
   color: white;
-  box-shadow: 0 0 10px rgba(0, 0, 255, 0.6);
   animation: pulse 1.5s infinite; /* Apply pulse animation */
 }
 
 /* Glow effect on hover */
 .navigate-btn:hover {
-  background-color: darkblue;
+  background-color: rgb(223, 94, 237);
   transform: scale(1.1);
-  box-shadow: 0 0 20px rgba(0, 0, 255, 0.8);
+ 
 }
 
 /* Bounce effect on click */
@@ -201,7 +200,7 @@
 .navigate-btn:hover {
   background-color: rgb(46, 46, 240);
   transform: scale(1.1);
-  box-shadow: 0 0 20px rgba(90, 90, 239, 0.8);
+ 
 }
 
 .navigate-btn:active {
@@ -215,5 +214,5 @@
 }
 
 .dropdown-btn:hover {
-  background-color: darkred;
+  background-color: rgb(235, 43, 43);
 }
