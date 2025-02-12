@@ -5,21 +5,23 @@
 ## Follow me on my Instagram : https://www.instagram.com/sauravdev20002019/profilecard/?igsh=cnJsaGlqMnZjMm5h
 
 #### PROJECT :
+Rock-Scissor-Paper
 
 
 
 #### ACKNOWLEDGEMENTS :
+
 #### DESCRIPTION :
+
 #### TECHNOLOGIES :
 HTML5 , CSS , Plane Javascript 
 
 #### CONCEPTS AND TECHNIQUES:
-Animations
-
-
+Animations , HTML5 , CSS , Javascript
 
 #### USAGE :
 #### LICENSE :
+
 #### CONTACT :
 
 You can reach out to me at -> devsaurabh086@gmail.com
