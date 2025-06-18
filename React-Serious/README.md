@@ -1,12 +1,37 @@
-# React + Vite
+### React-Stage2 : (May-Phase)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## CONCEPT OF REDUX-TOOLKIT : 
 
-Currently, two official plugins are available:
+## --> ARCHITECTURE and CONCEPT: 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## --> CONCEPT OF PAYLOAD 
 
-## Expanding the ESLint configuration
+## --> REDUX THUNK
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## --> FIREBASE Authentication
+
+## --> FIREBASE-FIRESTORE -- CRUD functionality 
+
+## --> JAVASCRIPT DEEP REVIEW
+
+## --> React Project driven 8 hrs . 
+
+
+### DSA :
+
+--> Linked-List .
+--> Recursion . 
+--> Strings 
+--> Sorting Algorithms 
+
+### SYSTEM DESIGN : 
+
+--> System design basics .
+
+
+
+
+
+
+
+
